@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIO COFFEE (Lio Coffe) – Cà Phê Nguyên Chất, Trà & Bánh Ngọt | Vũ Văn Lánh - 0932323012</title>
+    <meta name="description" content="LIO COFFEE chuyên phục vụ cà phê rang xay nguyên chất 100%, trà trái cây thảo mộc thanh mát và bánh ngọt thủ công nướng mới mỗi ngày. Liên hệ chủ quán Vũ Văn Lánh: 0932323012.">
+    
+    <!-- Google Fonts: Playfair Display & Be Vietnam Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            900: '#271714',
+                            800: '#3E2723',
+                            700: '#4E342E',
+                            600: '#6D4C41',
+                            500: '#8D6E63',
+                            100: '#F5EBE6',
+                            50: '#FAF5EF'
+                        },
+                        caramel: {
+                            600: '#B45309',
+                            500: '#D97706',
+                            400: '#F59E0B',
+                            100: '#FEF3C7'
+                        },
+                        tea: {
+                            700: '#2E5A44',
+                            600: '#3B7A57',
+                            100: '#E6F4EA'
+                        },
+                        cream: '#FFFDF9'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Be Vietnam Pro"', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'warm': '0 10px 30px -5px rgba(62, 39, 35, 0.12), 0 4px 12px -2px rgba(62, 39, 35, 0.06)',
+                        'warm-lg': '0 20px 40px -10px rgba(62, 39, 35, 0.22)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FFFDF9;
+            color: #3E2723;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            overflow-x: hidden;
+        }
+        /* Hiệu ứng cuộn mượt & thanh cuộn tinh tế */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF5EF;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8D6E63;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4E342E;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(39, 23, 20, 0.88) 0%, rgba(62, 39, 35, 0.72) 55%, rgba(62, 39, 35, 0.45) 100%), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1920&q=85');
+            background-size: cover;
+            background-position: center;
+        }
+        .coffee-pattern {
+            background-color: #FAF5EF;
+            background-image: radial-gradient(#D97706 0.6px, transparent 0.6px), radial-gradient(#3E2723 0.6px, #FAF5EF 0.6px);
+            background-size: 28px 28px;
+            background-position: 0 0, 14px 14px;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(217, 119, 6, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
+        }
+        .pulse-btn {
+            animation: pulse-ring 2.2s infinite;
+        }
+        .menu-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .menu-card:hover {
+            transform: translateY(-6px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-caramel-500 selection:text-white">
+
+    <!-- THANH THÔNG BÁO ĐẦU TRANG (TOP BAR) -->
+    <div class="bg-coffee-900 text-caramel-100 text-xs sm:text-sm py-2.5 px-4 border-b border-coffee-700">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+                <span class="font-medium">LIO COFFEE – Tinh Hoa Cà Phê Nguyên Chất, Trà Thanh Mát & Bánh Ngọt Thủ Công</span>
+            </div>
+            <div class="flex items-center space-x-4 text-xs sm:text-sm">
+                <span class="hidden md:inline-flex items-center text-stone-300">
+                    <i class="fa-regular fa-clock text-caramel-400 mr-1.5"></i>
+                    Mở cửa: 06:30 - 22:30 hàng ngày <span class="ml-1 text-[11px] bg-coffee-700 px-1.5 py-0.5 rounded text-amber-200">[CÓ THỂ CHỈNH SỬA]</span>
+                </span>
+                <a href="tel:0932323012" class="font-semibold text-amber-400 hover:text-amber-300 transition flex items-center">
+                    <i class="fa-solid fa-phone-volume mr-1.5"></i> Chủ quán Vũ Văn Lánh: 0932323012
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER & THANH ĐIỀU HƯỚNG CỐ ĐỊNH (STICKY NAVBAR) -->
+    <header id="navbar" class="sticky top-0 z-40 bg-cream/95 backdrop-blur-md shadow-warm border-b border-coffee-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Thương Hiệu -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-coffee-800 to-coffee-700 flex items-center justify-center text-caramel-400 shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-mug-hot text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-2xl sm:text-3xl tracking-tight text-coffee-900 block leading-none">
+                            LIO <span class="text-caramel-500">COFFEE</span>
+                        </span>
+                        <span class="text-[11px] uppercase tracking-widest text-coffee-600 font-semibold block mt-1">
+                            Cà Phê • Trà • Bánh Ngọt
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden lg:flex items-center space-x-7 font-medium text-coffee-800">
+                    <a href="#home" class="hover:text-caramel-500 transition py-2">Trang chủ</a>
+                    <a href="#story" class="hover:text-caramel-500 transition py-2">Câu chuyện & Chủ quán</a>
+                    <a href="#menu" class="hover:text-caramel-500 transition py-2">Thực đơn & Bảng giá</a>
+                    <a href="#space" class="hover:text-caramel-500 transition py-2">Không gian quán</a>
+                    <a href="#order" class="hover:text-caramel-500 transition py-2">Đặt món / Đặt bàn</a>
+                    <a href="#faq" class="hover:text-caramel-500 transition py-2">Hỏi đáp</a>
+                </nav>
+
+                <!-- Cụm Nút Hành Động Trên Header -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <!-- Nút Giỏ Món Nhanh -->
+                    <a href="#order" class="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-coffee-100 hover:bg-caramel-100 text-coffee-800 font-semibold text-sm transition" title="Xem khay món đã chọn">
+                        <i class="fa-solid fa-basket-shopping text-caramel-600 text-base"></i>
+                        <span class="hidden xl:inline">Giỏ món</span>
+                        <span id="headerCartCount" class="px-2 py-0.5 text-xs rounded-full bg-caramel-500 text-white font-bold">0</span>
+                    </a>
+                    <!-- Nút Gọi Ngay Chủ Quán -->
+                    <a href="tel:0932323012" class="inline-flex items-center gap-2.5 bg-gradient-to-r from-caramel-600 to-caramel-500 hover:from-caramel-500 hover:to-amber-500 text-white font-bold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 text-sm">
+                        <i class="fa-solid fa-phone-volume animate-bounce"></i>
+                        <span>0932323012</span>
+                    </a>
+                </div>
+
+                <!-- Nút Mở Menu Mobile -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <a href="#order" class="relative p-2.5 rounded-xl bg-coffee-100 text-coffee-800">
+                        <i class="fa-solid fa-basket-shopping text-caramel-600"></i>
+                        <span id="mobileCartCount" class="absolute -top-1 -right-1 w-5 h-5 flex items-center justify-center text-[11px] rounded-full bg-caramel-500 text-white font-bold">0</span>
+                    </a>
+                    <button id="mobileMenuBtn" type="button" class="p-2.5 rounded-xl bg-coffee-800 text-white hover:bg-coffee-700 focus:outline-none" aria-label="Mở menu">
+                        <i id="mobileMenuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-cream border-b border-coffee-200 px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <div class="grid grid-cols-1 gap-1 text-base font-medium text-coffee-800">
+                <a href="#home" class="mobile-nav-link px-3 py-2.5 rounded-xl hover:bg-coffee-100 flex items-center gap-3">
+                    <i class="fa-solid fa-house text-caramel-500 w-5"></i> Trang chủ
+                </a>
+                <a href="#story" class="mobile-nav-link px-3 py-2.5 rounded-xl hover:bg-coffee-100 flex items-center gap-3">
+                    <i class="fa-solid fa-user-check text-caramel-500 w-5"></i> Câu chuyện & Chủ quán Vũ Văn Lánh
+                </a>
+                <a href="#menu" class="mobile-nav-link px-3 py-2.5 rounded-xl hover:bg-coffee-100 flex items-center gap-3">
+                    <i class="fa-solid fa-book-open text-caramel-500 w-5"></i> Thực đơn & Bảng giá
+                </a>
+                <a href="#space" class="mobile-nav-link px-3 py-2.5 rounded-xl hover:bg-coffee-100 flex items-center gap-3">
+                    <i class="fa-solid fa-images text-caramel-500 w-5"></i> Không gian quán
+                </a>
+                <a href="#order" class="mobile-nav-link px-3 py-2.5 rounded-xl hover:bg-coffee-100 flex items-center gap-3">
+                    <i class="fa-solid fa-cart-plus text-caramel-500 w-5"></i> Đặt món / Đặt bàn nhanh
+                </a>
+                <a href="#faq" class="mobile-nav-link px-3 py-2.5 rounded-xl hover:bg-coffee-100 flex items-center gap-3">
+                    <i class="fa-solid fa-circle-question text-caramel-500 w-5"></i> Câu hỏi thường gặp
+                </a>
+            </div>
+            <div class="pt-3 border-t border-coffee-100 flex flex-col sm:flex-row gap-2.5">
+                <a href="tel:0932323012" class="w-full py-3 rounded-xl bg-caramel-500 text-white font-bold text-center flex items-center justify-center gap-2 shadow">
+                    <i class="fa-solid fa-phone"></i> Gọi Vũ Văn Lánh: 0932323012
+                </a>
+                <a href="https://zalo.me/0932323012" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-blue-600 text-white font-bold text-center flex items-center justify-center gap-2 shadow">
+                    <i class="fa-solid fa-comment-dots"></i> Nhắn Zalo: 0932323012
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION (MÀN HÌNH ĐẦU TIÊN) -->
+    <section id="home" class="hero-bg relative min-h-[85vh] flex items-center py-16 lg:py-24 text-white overflow-hidden">
+        <!-- Hạt trang trí mờ -->
+        <div class="absolute -bottom-16 -left-16 w-72 h-72 bg-caramel-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-12 right-10 w-80 h-80 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <!-- Cột Nội dung Hero -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-300 text-xs sm:text-sm font-semibold">
+                        <i class="fa-solid fa-seedling text-amber-400"></i>
+                        <span>100% Hạt Cà Phê Rang Mộc Nguyên Chất • Trà Tươi • Bánh Nướng Trong Ngày</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white">
+                        LIO COFFEE – Đánh Thức Ngày Mới Bằng <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-caramel-400">Hương Vị Nguyên Bản</span>
+                    </h1>
+
+                    <p class="text-stone-200 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl font-normal">
+                        Chào mừng bạn đến với <strong class="text-amber-300">LIO COFFEE (Lio Coffe)</strong>. Nơi mỗi tách cà phê đậm đà, mỗi ly trà trái cây thanh mát và từng chiếc bánh ngọt thủ công đều được chăm chút bằng cả tâm huyết của chủ quán <strong class="text-white underline decoration-caramel-400 underline-offset-4">Vũ Văn Lánh</strong>.
+                    </p>
+
+                    <!-- Cụm 2 Nút CTA Chính -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="#menu" class="inline-flex items-center justify-center gap-3 px-7 py-4 rounded-2xl bg-gradient-to-r from-caramel-500 to-amber-500 hover:from-amber-500 hover:to-caramel-500 text-white font-bold text-base sm:text-lg shadow-xl transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                            <span>Xem Thực Đơn & Đặt Món</span>
+                        </a>
+                        <a href="tel:0932323012" class="inline-flex items-center justify-center gap-3 px-7 py-4 rounded-2xl bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-bold text-base sm:text-lg transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-phone-volume text-amber-400"></i>
+                            <span>Liên Hệ Chủ Quán: 0932323012</span>
+                        </a>
+                    </div>
+
+                    <!-- 3 Cam kết nhanh dưới Hero -->
+                    <div class="pt-6 grid grid-cols-3 gap-3 sm:gap-6 border-t border-white/15 text-left">
+                        <div class="flex items-start gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-amber-400/20 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check-double"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-white">Cà Phê Mộc 100%</div>
+                                <div class="text-xs text-stone-300">Không tẩm ướp hóa chất</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-amber-400/20 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-white">Trà & Trái Cây Tươi</div>
+                                <div class="text-xs text-stone-300">Ủ mới mỗi ngày, vị tự nhiên</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <div class="w-9 h-9 rounded-xl bg-amber-400/20 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-cake-candles"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-white">Bánh Ngọt Thủ Công</div>
+                                <div class="text-xs text-stone-300">Ít ngọt, nướng mới thơm lừng</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cột Hình Ảnh Nổi Bật -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Khung ảnh chính -->
+                        <div class="rounded-3xl overflow-hidden border-4 border-white/20 shadow-2xl relative group">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" 
+                                 alt="Ly cà phê nguyên chất và bánh ngọt tại LIO COFFEE" 
+                                 onerror="this.src='https://placehold.co/800x950/3E2723/FFFDF9?text=LIO+COFFEE'"
+                                 class="w-full h-[420px] sm:h-[480px] object-cover group-hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-coffee-900/90 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-5 left-5 right-5 text-white">
+                                <span class="px-3 py-1 rounded-full bg-caramel-500 text-xs font-bold uppercase tracking-wider">Best Seller Tại Quán</span>
+                                <h2 class="font-serif text-2xl font-bold mt-2">Combo Sáng Tỉnh Táo: Cà Phê Nguyên Chất & Croissant Bơ Pháp</h2>
+                                <p class="text-xs sm:text-sm text-stone-200 mt-1">Hương thơm nồng nàn đánh thức mọi giác quan</p>
+                            </div>
+                        </div>
+
+                        <!-- Thẻ nổi Liên hệ nhanh Chủ quán -->
+                        <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:-left-6 bg-cream text-coffee-900 p-4 rounded-2xl shadow-warm-lg border border-caramel-100 flex items-center gap-3.5">
+                            <div class="w-12 h-12 rounded-xl bg-tea-700 text-white flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-coffee-600">Chủ quán hỗ trợ đặt món & giữ bàn</div>
+                                <div class="font-bold text-sm sm:text-base text-coffee-900">Vũ Văn Lánh • <a href="tel:0932323012" class="text-caramel-600 hover:underline">0932323012</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ĐIỂM KHÁC BIỆT & CÂU CHUYỆN THƯƠNG HIỆU (CHỦ QUÁN VŨ VĂN LÁNH) -->
+    <section id="story" class="py-16 lg:py-24 coffee-pattern relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Cột hình ảnh & Thẻ Chủ quán Vũ Văn Lánh -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="relative rounded-3xl overflow-hidden shadow-warm-lg border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=85" 
+                             alt="Không gian pha chế cà phê nguyên chất tại LIO COFFEE" 
+                             onerror="this.src='https://placehold.co/800x600/3E2723/FFFDF9?text=Tam+Huyet+Lio+Coffee'"
+                             class="w-full h-80 sm:h-96 object-cover">
+                        <div class="absolute top-4 left-4 bg-coffee-900/85 backdrop-blur-md text-amber-300 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-award mr-1"></i> Hương vị tử tế từ tâm
+                        </div>
+                    </div>
+
+                    <!-- Thẻ Thông Tin Chủ Quán Vũ Văn Lánh -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-7 shadow-warm border border-coffee-100 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-28 h-28 bg-caramel-100/60 rounded-bl-full pointer-events-none"></div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-coffee-800 to-caramel-600 text-white flex items-center justify-center text-2xl font-serif font-bold shadow-md shrink-0">
+                                VL
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-caramel-600 bg-caramel-100 px-2.5 py-0.5 rounded-md">Nhà Sáng Lập & Chủ Quán</span>
+                                <h3 class="font-serif text-2xl font-bold text-coffee-900 mt-1">Vũ Văn Lánh</h3>
+                                <p class="text-sm text-coffee-600">Thương hiệu LIO COFFEE (Lio Coffe)</p>
+                            </div>
+                        </div>
+
+                        <blockquote class="mt-4 text-sm sm:text-base italic text-coffee-700 bg-coffee-50 p-4 rounded-2xl border-l-4 border-caramel-500">
+                            "Tại LIO COFFEE, tôi luôn tâm niệm mỗi ly cà phê, mỗi tách trà và chiếc bánh trao tới tay khách hàng phải sạch, chuẩn vị tự nhiên như pha cho chính người thân trong gia đình mình thưởng thức."
+                        </blockquote>
+
+                        <div class="mt-5 pt-4 border-t border-coffee-100 flex flex-col sm:flex-row gap-3">
+                            <a href="tel:0932323012" class="flex-1 py-3 px-4 rounded-xl bg-coffee-800 hover:bg-coffee-900 text-white font-semibold text-sm flex items-center justify-center gap-2 transition shadow">
+                                <i class="fa-solid fa-phone-volume text-amber-400"></i>
+                                <span>Gọi trực tiếp: 0932323012</span>
+                            </a>
+                            <a href="https://zalo.me/0932323012" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-tea-700 hover:bg-tea-600 text-white font-semibold text-sm flex items-center justify-center gap-2 transition shadow">
+                                <i class="fa-solid fa-comment-dots text-amber-300"></i>
+                                <span>Kết nối Zalo Chủ Quán</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cột Câu chuyện & Cam kết 3 KHÔNG -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-caramel-100 text-caramel-600 text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-mug-hot"></i> Câu Chuyện Thương Hiệu LIO COFFEE
+                    </div>
+
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-coffee-900 leading-tight">
+                        Trọn Vẹn Tâm Huyết Trong Từng Hạt Cà Phê, Lá Trà & Mẻ Bánh Mới
+                    </h2>
+
+                    <p class="text-coffee-700 text-base sm:text-lg leading-relaxed">
+                        Khởi nguồn từ niềm đam mê hương vị cà phê Việt Nam nguyên bản, chủ quán <strong>Vũ Văn Lánh</strong> đã xây dựng <strong>LIO COFFEE</strong> không chỉ là một quán nước đơn thuần, mà là điểm hẹn bình yên để bạn bắt đầu ngày mới tràn đầy năng lượng, gặp gỡ đối tác hay tận hưởng phút giây thư giãn bên những người thân yêu.
+                    </p>
+
+                    <!-- Cam kết 3 KHÔNG trong Cà Phê -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-warm border border-coffee-100 space-y-5">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <h3 class="font-serif text-xl sm:text-2xl font-bold text-coffee-900 flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-caramel-500 text-white flex items-center justify-center text-sm">3K</span>
+                                Cam Kết "3 KHÔNG" Trong Cà Phê LIO
+                            </h3>
+                            <span class="text-xs font-semibold text-tea-700 bg-tea-100 px-3 py-1 rounded-full">An toàn cho sức khỏe</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="p-4 rounded-2xl bg-coffee-50 border border-coffee-100">
+                                <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center font-bold mb-3">
+                                    <i class="fa-solid fa-ban"></i>
+                                </div>
+                                <h4 class="font-bold text-coffee-900 text-base">1. Không độn bắp & đậu</h4>
+                                <p class="text-xs sm:text-sm text-coffee-600 mt-1">Sử dụng 100% hạt Robusta & Arabica chín đỏ tuyển chọn, rang mộc chuẩn nhiệt độ.</p>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-coffee-50 border border-coffee-100">
+                                <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center font-bold mb-3">
+                                    <i class="fa-solid fa-flask-vial"></i>
+                                </div>
+                                <h4 class="font-bold text-coffee-900 text-base">2. Không hương liệu hóa học</h4>
+                                <p class="text-xs sm:text-sm text-coffee-600 mt-1">Giữ trọn hương thơm tự nhiên, hậu vị ngọt dịu, không gây gắt cổ hay mệt tim.</p>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-coffee-50 border border-coffee-100">
+                                <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center font-bold mb-3">
+                                    <i class="fa-solid fa-shield-heart"></i>
+                                </div>
+                                <h4 class="font-bold text-coffee-900 text-base">3. Không chất bảo quản</h4>
+                                <p class="text-xs sm:text-sm text-coffee-600 mt-1">Cà phê xay mới tại quầy, trà ủ tươi theo khung giờ và bánh ngọt làm mới mỗi sáng.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin Địa chỉ & Giờ mở cửa (Thẻ giữ chỗ dễ sửa) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-amber-50/90 border border-amber-200 flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-caramel-500 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold uppercase text-caramel-600">Địa chỉ quán LIO COFFEE</div>
+                                <div class="font-semibold text-sm text-coffee-900 mt-0.5">[ĐỊA CHỈ QUÁN LIO COFFEE - CẬP NHẬT TẠI ĐÂY]</div>
+                                <div class="text-xs text-coffee-600 mt-1">Gọi <a href="tel:0932323012" class="font-bold underline">0932323012</a> để được chỉ đường nhanh</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-tea-100/70 border border-tea-700/20 flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-tea-700 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold uppercase text-tea-700">Khung giờ phục vụ</div>
+                                <div class="font-semibold text-sm text-coffee-900 mt-0.5">Mở cửa: 06:30 - 22:30 hàng ngày</div>
+                                <div class="text-xs text-coffee-600 mt-1">[CÓ THỂ CHỈNH SỬA] • Phục vụ tại quán & mang đi</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. THỰC ĐƠN & BẢNG GIÁ TƯƠNG TÁC (INTERACTIVE MENU & PRICING) -->
+    <section id="menu" class="py-16 lg:py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Tiêu đề khu vực Thực đơn -->
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coffee-100 text-coffee-800 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-utensils text-caramel-500"></i> Hương Vị Đặc Trưng Tại LIO COFFEE
+                </div>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-coffee-900">
+                    Thực Đơn & Bảng Giá Hấp Dẫn
+                </h2>
+                <p class="text-coffee-600 text-base sm:text-lg">
+                    Mời bạn khám phá các món đồ uống và bánh ngọt được yêu thích nhất. Bấm nút <strong>"Chọn món +"</strong> để thêm ngay vào khay đặt món nhanh qua Zalo hoặc Điện thoại <strong class="text-caramel-600">0932323012</strong>.
+                </p>
+                <!-- Ghi chú minh bạch về bảng giá -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm font-medium">
+                    <i class="fa-solid fa-circle-info text-caramel-500"></i>
+                    <span>Ghi chú: <strong>Bảng giá tham khảo mẫu – Có thể tùy chỉnh trực tiếp theo giá niêm yết tại quán.</strong></span>
+                </div>
+            </div>
+
+            <!-- Thanh Công Cụ Lọc Danh Mục & Tìm Kiếm Món -->
+            <div class="mt-10 bg-coffee-50 p-4 sm:p-5 rounded-3xl border border-coffee-100 shadow-sm">
+                <div class="flex flex-col lg:flex-row justify-between items-stretch lg:items-center gap-4">
+                    
+                    <!-- Các nút lọc danh mục -->
+                    <div class="flex items-center gap-2 overflow-x-auto pb-2 lg:pb-0 no-scrollbar" id="categoryButtons">
+                        <button type="button" data-category="all" class="filter-btn active-filter shrink-0 px-5 py-2.5 rounded-2xl font-bold text-sm transition bg-coffee-800 text-white shadow">
+                            <i class="fa-solid fa-border-all mr-1.5"></i> Tất cả (12)
+                        </button>
+                        <button type="button" data-category="coffee" class="filter-btn shrink-0 px-5 py-2.5 rounded-2xl font-semibold text-sm transition bg-white text-coffee-800 hover:bg-caramel-100 border border-coffee-100">
+                            <i class="fa-solid fa-mug-hot text-caramel-500 mr-1.5"></i> Cà Phê Nguyên Chất
+                        </button>
+                        <button type="button" data-category="tea" class="filter-btn shrink-0 px-5 py-2.5 rounded-2xl font-semibold text-sm transition bg-white text-coffee-800 hover:bg-caramel-100 border border-coffee-100">
+                            <i class="fa-solid fa-leaf text-tea-600 mr-1.5"></i> Trà Trái Cây & Thảo Mộc
+                        </button>
+                        <button type="button" data-category="bakery" class="filter-btn shrink-0 px-5 py-2.5 rounded-2xl font-semibold text-sm transition bg-white text-coffee-800 hover:bg-caramel-100 border border-coffee-100">
+                            <i class="fa-solid fa-cookie-bite text-amber-600 mr-1.5"></i> Bánh Ngọt Thủ Công
+                        </button>
+                    </div>
+
+                    <!-- Ô tìm kiếm món ăn theo tên -->
+                    <div class="relative w-full lg:w-80">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-coffee-500"></i>
+                        <input id="menuSearchInput" type="text" placeholder="Tìm món (VD: Bạc xỉu, Trà đào, Tiramisu...)" 
+                               class="w-full pl-11 pr-10 py-2.5 rounded-2xl bg-white border border-coffee-200 focus:border-caramel-500 focus:ring-2 focus:ring-caramel-500/20 outline-none text-sm text-coffee-900">
+                        <button id="clearSearchBtn" type="button" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-coffee-500 hover:text-coffee-800" aria-label="Xóa tìm kiếm">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lưới Danh Sách Món Ăn (Render từ JS) -->
+            <div id="menuGrid" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Danh sách 12 món sẽ được hiển thị tự động bằng JavaScript -->
+            </div>
+
+            <!-- Thông báo khi không tìm thấy món -->
+            <div id="emptyMenuNotice" class="hidden text-center py-12 bg-coffee-50 rounded-3xl mt-6 border border-coffee-100">
+                <i class="fa-solid fa-mug-saucer text-4xl text-coffee-500 mb-3"></i>
+                <h3 class="font-serif text-xl font-bold text-coffee-900">Không tìm thấy món phù hợp</h3>
+                <p class="text-sm text-coffee-600 mt-1">Bạn hãy thử từ khóa khác hoặc bấm "Xem tất cả thực đơn" nhé!</p>
+                <button id="resetFilterBtn" type="button" class="mt-4 px-5 py-2.5 rounded-xl bg-caramel-500 text-white font-bold text-sm">
+                    Xem tất cả 12 món
+                </button>
+            </div>
+
+            <!-- Thanh tóm tắt dẫn xuống khu vực Đặt món -->
+            <div class="mt-12 bg-gradient-to-r from-coffee-900 via-coffee-800 to-coffee-900 rounded-3xl p-6 sm:p-8 text-white shadow-warm-lg flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-1 text-center md:text-left">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Hỗ trợ đặt tiệc trà, họp nhóm & giao tận nơi</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold">Bạn đã chọn được món yêu thích tại LIO COFFEE?</h3>
+                    <p class="text-stone-300 text-sm sm:text-base">Kiểm tra khay món đã chọn hoặc gọi trực tiếp Chủ quán Vũ Văn Lánh để được chuẩn bị chu đáo nhất.</p>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-3 shrink-0">
+                    <a href="#order" class="px-6 py-3.5 rounded-2xl bg-caramel-500 hover:bg-amber-500 text-white font-bold text-sm sm:text-base shadow-lg transition flex items-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Hoàn Tất Đơn Đặt Món</span>
+                    </a>
+                    <a href="tel:0932323012" class="px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/25 text-white font-bold text-sm sm:text-base transition flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0932323012</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. KHÁM PHÁ KHÔNG GIAN QUÁN (GALLERY + LIGHTBOX) -->
+    <section id="space" class="py-16 lg:py-24 bg-coffee-50 border-y border-coffee-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-caramel-100 text-caramel-600 text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-camera-retro"></i> Không Gian LIO COFFEE
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-coffee-900 mt-3">
+                        Góc Nhỏ Ấm Áp Cho Mọi Cuộc Gặp Gỡ
+                    </h2>
+                </div>
+                <p class="text-coffee-600 text-sm sm:text-base max-w-md">
+                    Bấm vào từng bức ảnh để phóng to xem chi tiết các góc không gian xanh mát, yên tĩnh đọc sách và quầy pha chế ngập tràn hương thơm tại quán.
+                </p>
+            </div>
+
+            <!-- Lưới 4 Không Gian Đặc Trưng -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Góc 1 -->
+                <div class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-warm border border-coffee-100"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85', 'Góc Sân Vườn Thoáng Đãng', 'Không gian ngập tràn ánh sáng tự nhiên và cây xanh, lý tưởng cho buổi cà phê sáng thảnh thơi.')">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=80" 
+                             alt="Góc Sân Vườn Thoáng Đãng tại LIO COFFEE" 
+                             onerror="this.src='https://placehold.co/600x450/2E5A44/FFFDF9?text=San+Vuon+Lio+Coffee'"
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-coffee-900/20 group-hover:bg-coffee-900/40 transition flex items-center justify-center">
+                            <span class="w-11 h-11 rounded-full bg-white/90 text-coffee-900 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </div>
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-tea-700 text-white text-xs font-semibold">Thoáng mát</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg text-coffee-900 group-hover:text-caramel-600 transition">Góc Sân Vườn Thoáng Đãng</h3>
+                        <p class="text-xs sm:text-sm text-coffee-600 mt-1">Nhiều cây xanh mát mắt, không khí trong lành dễ chịu suốt cả ngày.</p>
+                    </div>
+                </div>
+
+                <!-- Góc 2 -->
+                <div class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-warm border border-coffee-100"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85', 'Góc Trong Nhà Ấm Cúng', 'Ánh đèn vàng dịu nhẹ kết hợp nội thất tông gỗ mộc mạc mang lại cảm giác thư thái, gần gũi.')">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=80" 
+                             alt="Góc Trong Nhà Ấm Cúng tại LIO COFFEE" 
+                             onerror="this.src='https://placehold.co/600x450/3E2723/FFFDF9?text=Khong+Gian+Am+Cung'"
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-coffee-900/20 group-hover:bg-coffee-900/40 transition flex items-center justify-center">
+                            <span class="w-11 h-11 rounded-full bg-white/90 text-coffee-900 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </div>
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-caramel-500 text-white text-xs font-semibold">Ấm cúng</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg text-coffee-900 group-hover:text-caramel-600 transition">Góc Trong Nhà Ấm Cúng</h3>
+                        <p class="text-xs sm:text-sm text-coffee-600 mt-1">Ánh đèn vàng dịu nhẹ, bàn ghế êm ái phù hợp trò chuyện cùng bạn bè, gia đình.</p>
+                    </div>
+                </div>
+
+                <!-- Góc 3 -->
+                <div class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-warm border border-coffee-100"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=85', 'Góc Làm Việc & Đọc Sách Yên Tĩnh', 'Trang bị đầy đủ ổ cắm điện tại bàn, Wifi tốc độ cao và nhạc Acoustic nhẹ nhàng giúp tập trung tối đa.')">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80" 
+                             alt="Góc Làm Việc & Đọc Sách Yên Tĩnh tại LIO COFFEE" 
+                             onerror="this.src='https://placehold.co/600x450/4E342E/FFFDF9?text=Goc+Lam+Viec+Lio'"
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-coffee-900/20 group-hover:bg-coffee-900/40 transition flex items-center justify-center">
+                            <span class="w-11 h-11 rounded-full bg-white/90 text-coffee-900 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </div>
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-coffee-800 text-white text-xs font-semibold">Wifi mạnh • Ổ cắm</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg text-coffee-900 group-hover:text-caramel-600 transition">Góc Làm Việc & Đọc Sách</h3>
+                        <p class="text-xs sm:text-sm text-coffee-600 mt-1">Yên tĩnh, có sẵn ổ cắm điện mỗi bàn và Wifi tốc độ cao miễn phí.</p>
+                    </div>
+                </div>
+
+                <!-- Góc 4 -->
+                <div class="group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-warm border border-coffee-100"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85', 'Quầy Pha Chế Mở & Tủ Bánh Thơm Lừng', 'Khách hàng có thể trực tiếp ngắm nhìn quy trình chiết xuất Espresso nguyên chất và chọn bánh mới ra lò.')">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=80" 
+                             alt="Quầy Pha Chế Mở tại LIO COFFEE" 
+                             onerror="this.src='https://placehold.co/600x450/6D4C41/FFFDF9?text=Quay+Pha+Che+Mo'"
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-coffee-900/20 group-hover:bg-coffee-900/40 transition flex items-center justify-center">
+                            <span class="w-11 h-11 rounded-full bg-white/90 text-coffee-900 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </div>
+                        <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-amber-600 text-white text-xs font-semibold">Pha chế trực tiếp</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg text-coffee-900 group-hover:text-caramel-600 transition">Quầy Pha Chế Mở</h3>
+                        <p class="text-xs sm:text-sm text-coffee-600 mt-1">Thưởng thức trọn vẹn hương thơm cà phê xay mới và tủ bánh ngọt hấp dẫn.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. KHU VỰC ĐẶT BÀN & ĐẶT MÓN NHANH QUA ZALO / ĐIỆN THOẠI (0932323012) -->
+    <section id="order" class="py-16 lg:py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-caramel-100 text-caramel-600 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-bolt"></i> Nhanh Chóng • Tiện Lợi • Trực Tiếp Chủ Quán
+                </div>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-coffee-900">
+                    Đặt Món Giao Tận Nơi & Giữ Bàn Trước
+                </h2>
+                <p class="text-coffee-600 text-base sm:text-lg">
+                    Chọn món từ thực đơn phía trên, điền thông tin nhận món và gửi trực tiếp qua Zalo hoặc gọi cho chủ quán <strong>Vũ Văn Lánh (<a href="tel:0932323012" class="text-caramel-600 underline">0932323012</a>)</strong>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Cột Trái: Khay Món Khách Đã Chọn -->
+                <div class="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 shadow-warm border border-coffee-100">
+                    <div class="flex items-center justify-between border-b border-coffee-100 pb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-2xl bg-caramel-100 text-caramel-600 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl sm:text-2xl font-bold text-coffee-900">Khay Món Đã Chọn</h3>
+                                <p class="text-xs text-coffee-500">Tự động tính tổng tiền tạm tính</p>
+                            </div>
+                        </div>
+                        <button id="clearCartBtn" type="button" class="text-xs font-semibold text-red-600 hover:text-red-700 hover:underline hidden">
+                            <i class="fa-regular fa-trash-can mr-1"></i> Xóa hết
+                        </button>
+                    </div>
+
+                    <!-- Danh sách món trong giỏ -->
+                    <div id="cartItemsContainer" class="divide-y divide-coffee-100 my-4 max-h-96 overflow-y-auto pr-1">
+                        <!-- Render bằng JS -->
+                    </div>
+
+                    <!-- Khung Tổng Tiền Tạm Tính -->
+                    <div class="bg-coffee-50 rounded-2xl p-4 sm:p-5 border border-coffee-100 space-y-2">
+                        <div class="flex justify-between items-center text-sm text-coffee-700">
+                            <span>Tổng số lượng món:</span>
+                            <span id="cartTotalQty" class="font-bold text-coffee-900">0 món</span>
+                        </div>
+                        <div class="flex justify-between items-center text-base sm:text-lg pt-2 border-t border-coffee-200">
+                            <span class="font-bold text-coffee-900">Tổng cộng tạm tính:</span>
+                            <span id="cartTotalPrice" class="font-serif font-bold text-2xl text-caramel-600">0đ</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex items-center justify-between text-xs text-coffee-600 bg-amber-50/70 px-4 py-3 rounded-xl border border-amber-200/70">
+                        <span><i class="fa-solid fa-plus-circle text-caramel-500 mr-1.5"></i> Bạn muốn chọn thêm đồ uống hoặc bánh ngọt?</span>
+                        <a href="#menu" class="font-bold text-caramel-600 hover:underline shrink-0 ml-2">Lên Thực Đơn ↑</a>
+                    </div>
+                </div>
+
+                <!-- Cột Phải: Biểu Mẫu Thông Tin Khách & Nút Gửi Zalo / Gọi Điện -->
+                <div class="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 shadow-warm border border-coffee-100">
+                    <h3 class="font-serif text-xl sm:text-2xl font-bold text-coffee-900 mb-1">
+                        Thông Tin Đặt Món / Đặt Bàn
+                    </h3>
+                    <p class="text-xs sm:text-sm text-coffee-600 mb-6">
+                        Điền thông tin bên dưới để hệ thống tạo sẵn tin nhắn đặt hàng gửi tới Zalo <strong>0932323012</strong>.
+                    </p>
+
+                    <form id="orderForm" class="space-y-4" onsubmit="return false;">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="custName" class="block text-xs font-bold uppercase text-coffee-700 mb-1.5">Tên của bạn *</label>
+                                <input id="custName" type="text" required placeholder="VD: Anh Minh / Chị Lan" 
+                                       class="w-full px-4 py-3 rounded-xl bg-coffee-50 border border-coffee-200 focus:border-caramel-500 focus:bg-white outline-none text-sm text-coffee-900">
+                            </div>
+                            <div>
+                                <label for="custPhone" class="block text-xs font-bold uppercase text-coffee-700 mb-1.5">Số điện thoại liên hệ *</label>
+                                <input id="custPhone" type="tel" required placeholder="VD: 0912 xxx xxx" 
+                                       class="w-full px-4 py-3 rounded-xl bg-coffee-50 border border-coffee-200 focus:border-caramel-500 focus:bg-white outline-none text-sm text-coffee-900">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="orderType" class="block text-xs font-bold uppercase text-coffee-700 mb-1.5">Hình thức phục vụ</label>
+                            <select id="orderType" class="w-full px-4 py-3 rounded-xl bg-coffee-50 border border-coffee-200 focus:border-caramel-500 focus:bg-white outline-none text-sm text-coffee-900 font-medium">
+                                <option value="Đặt giao tận nơi (Delivery)">🛵 Đặt giao tận nơi (Delivery)</option>
+                                <option value="Đặt trước - Ghé quán lấy mang đi (Take-away)">🥡 Đặt trước - Ghé quán lấy mang đi (Take-away)</option>
+                                <option value="Đặt bàn trước & Dùng tại quán">🪑 Đặt bàn trước & Dùng tại quán LIO COFFEE</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="custAddress" class="block text-xs font-bold uppercase text-coffee-700 mb-1.5">Địa chỉ nhận hàng / Giờ ghé quán</label>
+                            <input id="custAddress" type="text" placeholder="Nhập địa chỉ giao hàng hoặc khung giờ bạn ghé quán..." 
+                                   class="w-full px-4 py-3 rounded-xl bg-coffee-50 border border-coffee-200 focus:border-caramel-500 focus:bg-white outline-none text-sm text-coffee-900">
+                        </div>
+
+                        <div>
+                            <label for="custNote" class="block text-xs font-bold uppercase text-coffee-700 mb-1.5">Ghi chú khẩu vị (Đá, độ ngọt, số người...)</label>
+                            <textarea id="custNote" rows="2" placeholder="VD: Bạc xỉu ít đá, Trà đào 50% đường, giữ bàn góc yên tĩnh cho 4 người..." 
+                                      class="w-full px-4 py-3 rounded-xl bg-coffee-50 border border-coffee-200 focus:border-caramel-500 focus:bg-white outline-none text-sm text-coffee-900"></textarea>
+                        </div>
+
+                        <!-- Khung Xem Trước Nội Dung Đơn Hàng -->
+                        <div class="p-3.5 rounded-2xl bg-stone-100 border border-stone-200 text-xs text-coffee-700">
+                            <div class="font-bold text-coffee-900 mb-1 flex items-center justify-between">
+                                <span><i class="fa-regular fa-file-lines mr-1 text-caramel-600"></i> Bản xem trước tin nhắn gửi Chủ quán:</span>
+                                <span class="text-[11px] text-tea-700 font-semibold">Tự động cập nhật</span>
+                            </div>
+                            <pre id="orderPreviewText" class="whitespace-pre-wrap font-sans text-xs text-coffee-800 leading-relaxed max-h-32 overflow-y-auto"></pre>
+                        </div>
+
+                        <!-- Cụm Nút Hành Động Thực Tế -->
+                        <div class="pt-2 space-y-3">
+                            <button id="sendZaloOrderBtn" type="button" class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-tea-700 to-tea-600 hover:from-tea-600 hover:to-tea-700 text-white font-bold text-base shadow-lg hover:shadow-xl transition flex items-center justify-center gap-3">
+                                <i class="fa-solid fa-copy text-lg"></i>
+                                <span>Sao chép đơn & Nhắn Zalo 0932323012</span>
+                            </button>
+
+                            <a href="tel:0932323012" class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-caramel-600 to-caramel-500 hover:from-caramel-500 hover:to-amber-500 text-white font-bold text-base shadow-md hover:shadow-lg transition flex items-center justify-center gap-3">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>Gọi Trực Tiếp Vũ Văn Lánh (0932323012)</span>
+                            </a>
+                        </div>
+
+                        <!-- Ghi chú minh bạch xử lý đơn hàng trên web tĩnh -->
+                        <p class="text-[12px] text-coffee-600 text-center bg-coffee-50 p-3 rounded-xl border border-coffee-100 leading-relaxed">
+                            <i class="fa-solid fa-shield-halved text-caramel-600 mr-1"></i>
+                            <strong>Bảo mật & Minh bạch:</strong> Trang web tĩnh xử lý đơn trực tiếp qua Zalo/Điện thoại của chủ quán <strong>Vũ Văn Lánh (0932323012)</strong>, hoàn toàn không lưu dữ liệu cá nhân ngầm trên máy chủ.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CÂU HỎI THƯỜNG GẶP (FAQ ACCORDION) -->
+    <section id="faq" class="py-16 lg:py-24 bg-coffee-50 border-t border-coffee-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-12">
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-caramel-100 text-caramel-600 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-circle-question"></i> Giải Đáp Nhanh
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-coffee-900">
+                    Câu Hỏi Thường Gặp Về LIO COFFEE
+                </h2>
+                <p class="text-coffee-600 text-sm sm:text-base">
+                    Nếu bạn cần tư vấn thêm, đừng ngần ngại gọi ngay cho chủ quán Vũ Văn Lánh qua số <a href="tel:0932323012" class="font-bold text-caramel-600 underline">0932323012</a>.
+                </p>
+            </div>
+
+            <div class="space-y-4" id="faqContainer">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl border border-coffee-100 shadow-sm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-coffee-900 hover:text-caramel-600 transition">
+                        <span>1. Nguồn gốc hạt cà phê tại LIO COFFEE có gì đặc biệt?</span>
+                        <i class="fa-solid fa-chevron-down text-caramel-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-coffee-700 leading-relaxed border-t border-coffee-50 pt-3">
+                        LIO COFFEE sử dụng 100% hạt cà phê Robusta Đắk Lắk và Arabica Cầu Đất chín mọng, được rang mộc chuẩn nhiệt độ và xay mới trực tiếp tại quầy. Chủ quán Vũ Văn Lánh cam kết <strong>3 KHÔNG</strong>: Không độn bắp/đậu, Không tẩm hương liệu hóa học và Không chất bảo quản.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl border border-coffee-100 shadow-sm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-coffee-900 hover:text-caramel-600 transition">
+                        <span>2. Quán có nhận đặt bánh ngọt sinh nhật, teabreak hay tiệc trà hội họp không?</span>
+                        <i class="fa-solid fa-chevron-down text-caramel-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-coffee-700 leading-relaxed border-t border-coffee-50 pt-3">
+                        Có! LIO COFFEE nhận chuẩn bị combo trà - cà phê - bánh ngọt thủ công cho tiệc sinh nhật, họp nhóm, sự kiện văn phòng với mức giá ưu đãi. Bạn vui lòng liên hệ trước với chủ quán Vũ Văn Lánh qua số điện thoại/Zalo <strong>0932323012</strong> để được chuẩn bị chu đáo nhất.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl border border-coffee-100 shadow-sm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-coffee-900 hover:text-caramel-600 transition">
+                        <span>3. Làm thế nào để đặt giao đồ uống và bánh tận nơi nhanh nhất?</span>
+                        <i class="fa-solid fa-chevron-down text-caramel-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-coffee-700 leading-relaxed border-t border-coffee-50 pt-3">
+                        Rất đơn giản! Bạn chỉ cần bấm <strong>"Chọn món +"</strong> trên thực đơn của trang web này, điền địa chỉ nhận hàng rồi bấm nút <strong>"Sao chép đơn & Nhắn Zalo 0932323012"</strong> hoặc gọi trực tiếp <strong>0932323012</strong>. Quán sẽ pha chế mới và giao tận tay bạn ngay khi hoàn tất.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl border border-coffee-100 shadow-sm overflow-hidden">
+                    <button type="button" class="faq-toggle w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-coffee-900 hover:text-caramel-600 transition">
+                        <span>4. Không gian tại LIO COFFEE có phù hợp để làm việc laptop và học nhóm không?</span>
+                        <i class="fa-solid fa-chevron-down text-caramel-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm sm:text-base text-coffee-700 leading-relaxed border-t border-coffee-50 pt-3">
+                        Hoàn toàn phù hợp. LIO COFFEE bố trí khu vực yên tĩnh riêng biệt với bàn ghế ngồi thoải mái, hệ thống Wifi tốc độ cao miễn phí và ổ cắm điện tiện lợi ở hầu hết các bàn.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER (CHÂN TRANG) -->
+    <footer class="bg-coffee-900 text-stone-300 pt-16 pb-24 lg:pb-12 border-t-4 border-caramel-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Cột 1: Thương hiệu -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-2xl bg-caramel-500 flex items-center justify-center text-white text-xl font-bold">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-2xl text-white tracking-tight block leading-none">LIO <span class="text-amber-400">COFFEE</span></span>
+                            <span class="text-xs text-stone-400">Lio Coffe – Tinh Hoa Cà Phê Nguyên Chất & Trà Bánh</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-stone-300 leading-relaxed max-w-md">
+                        Điểm hẹn ấm áp dành cho những tâm hồn yêu cà phê rang xay mộc nguyên chất, trà trái cây tươi thanh mát và bánh ngọt thủ công nướng mới mỗi ngày.
+                    </p>
+                    <div class="pt-1 flex items-center gap-3">
+                        <a href="tel:0932323012" class="px-4 py-2 rounded-xl bg-caramel-500 hover:bg-amber-500 text-white font-bold text-xs flex items-center gap-2 transition">
+                            <i class="fa-solid fa-phone"></i> Gọi: 0932323012
+                        </a>
+                        <a href="https://zalo.me/0932323012" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center gap-2 transition">
+                            <i class="fa-solid fa-comment-dots text-amber-400"></i> Zalo Chủ Quán
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cột 2: Liên hệ chính thức -->
+                <div class="lg:col-span-4 space-y-3">
+                    <h4 class="font-serif font-bold text-lg text-white">Thông Tin Chủ Quán & Liên Hệ</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-user-tie text-amber-400 mt-1 w-4"></i>
+                            <span>Chủ quán: <strong class="text-white">Vũ Văn Lánh</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-phone-volume text-amber-400 mt-1 w-4"></i>
+                            <span>Điện thoại / Zalo: <a href="tel:0932323012" class="text-amber-400 font-bold hover:underline">0932323012</a></span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-amber-400 mt-1 w-4"></i>
+                            <span>Địa chỉ: <span class="text-stone-200">[ĐỊA CHỈ QUÁN LIO COFFEE - CẬP NHẬT TẠI ĐÂY]</span></span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-clock text-amber-400 mt-1 w-4"></i>
+                            <span>Giờ mở cửa: 06:30 - 22:30 hàng ngày [CÓ THỂ CHỈNH SỬA]</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Hướng dẫn tùy chỉnh nhanh khi đưa lên GitHub Pages -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="font-serif font-bold text-lg text-white">Ghi Chú Quản Trị Web</h4>
+                    <div class="p-4 rounded-2xl bg-white/5 border border-white/10 text-xs text-stone-300 space-y-2 leading-relaxed">
+                        <p class="font-semibold text-amber-300"><i class="fa-brands fa-github mr-1"></i> Sẵn sàng cho GitHub Pages:</p>
+                        <p>• Để đổi địa chỉ & giờ mở cửa: Tìm cụm <code class="text-amber-200">[ĐỊA CHỈ QUÁN...]</code> trong file <code class="text-amber-200">index.html</code>.</p>
+                        <p>• Để chỉnh sửa tên món, hình ảnh & giá bán: Chỉnh trực tiếp tại mảng <code class="text-amber-200">menuData</code> ở cuối tệp mã nguồn.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
+                <p>© 2025 <strong>LIO COFFEE (Lio Coffe)</strong> – Chủ quán <strong>Vũ Văn Lánh (0932323012)</strong>. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#home" class="hover:text-amber-400 transition">Lên đầu trang ↑</a>
+                    <span>•</span>
+                    <a href="#menu" class="hover:text-amber-400 transition">Thực đơn</a>
+                    <span>•</span>
+                    <a href="#order" class="hover:text-amber-400 transition">Đặt món</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CỤM NÚT NỔI GÓC PHẢI MÀN HÌNH (FLOATING ACTION BUTTONS) -->
+    <div class="fixed bottom-5 right-4 sm:right-6 z-40 flex flex-col items-end gap-3">
+        <!-- Nút mở Giỏ món nhanh -->
+        <a href="#order" class="group flex items-center gap-2.5 bg-coffee-800 hover:bg-coffee-900 text-white px-4 py-3 rounded-full shadow-warm-lg border border-amber-400/40 transition transform hover:scale-105" title="Xem giỏ món đã chọn">
+            <div class="relative">
+                <i class="fa-solid fa-basket-shopping text-amber-400 text-lg"></i>
+                <span id="floatingCartCount" class="absolute -top-2 -right-2.5 w-5 h-5 rounded-full bg-caramel-500 text-white text-[11px] font-bold flex items-center justify-center">0</span>
+            </div>
+            <span class="text-xs font-bold hidden sm:inline">Đơn món</span>
+        </a>
+
+        <!-- Nút Chat Zalo 0932323012 -->
+        <a href="https://zalo.me/0932323012" target="_blank" rel="noopener noreferrer" 
+           class="flex items-center gap-2.5 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-full shadow-warm-lg transition transform hover:scale-105" title="Nhắn Zalo Vũ Văn Lánh: 0932323012">
+            <i class="fa-solid fa-comment-dots text-lg"></i>
+            <span class="text-xs font-bold">Zalo 0932323012</span>
+        </a>
+
+        <!-- Nút Gọi Trực Tiếp 0932323012 -->
+        <a href="tel:0932323012" 
+           class="pulse-btn flex items-center gap-2.5 bg-gradient-to-r from-caramel-600 to-amber-500 text-white px-5 py-3.5 rounded-full shadow-warm-lg font-bold text-xs sm:text-sm transition transform hover:scale-105" title="Gọi Chủ quán Vũ Văn Lánh: 0932323012">
+            <i class="fa-solid fa-phone-volume text-base"></i>
+            <span>Gọi: 0932323012</span>
+        </a>
+    </div>
+
+    <!-- MODAL LIGHTBOX XEM ẢNH KHÔNG GIAN PHÓNG TO -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full bg-coffee-900 rounded-3xl overflow-hidden shadow-2xl border border-white/15">
+            <button type="button" onclick="closeLightbox()" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/60 hover:bg-caramel-500 text-white flex items-center justify-center text-lg transition" aria-label="Đóng ảnh">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="lightboxImg" src="" alt="Không gian LIO COFFEE" class="w-full max-h-[72vh] object-cover">
+            <div class="p-5 sm:p-6 text-white bg-coffee-900">
+                <h3 id="lightboxTitle" class="font-serif text-xl sm:text-2xl font-bold text-amber-400"></h3>
+                <p id="lightboxDesc" class="text-sm text-stone-300 mt-1"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HỘP THÔNG BÁO TÙY CHỈNH (TOAST / MODAL THAY THẾ ALERT) -->
+    <div id="toastModal" class="fixed top-24 right-4 sm:right-6 z-50 hidden max-w-sm w-full bg-coffee-900 text-white p-4 rounded-2xl shadow-2xl border-l-4 border-amber-400 transition-all duration-300">
+        <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                <i id="toastIcon" class="fa-solid fa-circle-check text-lg"></i>
+            </div>
+            <div class="flex-1">
+                <h4 id="toastTitle" class="font-bold text-sm text-amber-300">Thông báo từ LIO COFFEE</h4>
+                <p id="toastMessage" class="text-xs text-stone-200 mt-1 leading-relaxed"></p>
+            </div>
+            <button type="button" onclick="hideToast()" class="text-stone-400 hover:text-white">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT XỬ LÝ TƯƠNG TÁC THỰC ĐƠN, GIỎ HÀNG, TÌM KIẾM & ĐẶT MÓN ZALO -->
+    <script>
+        // 1. DỮ LIỆU 12 MÓN ĐẶC TRƯNG TẠI LIO COFFEE (Dễ dàng chỉnh sửa giá & ảnh)
+        const menuData = [
+            {
+                id: 'cf-phin',
+                name: 'Cà Phê Phin Truyền Thống',
+                category: 'coffee',
+                categoryLabel: 'Cà Phê Nguyên Chất',
+                price: 29000,
+                badge: 'Nguyên Chất 100%',
+                badgeColor: 'bg-coffee-800 text-amber-300',
+                desc: 'Chiết xuất từ hạt Robusta Đắk Lắk rang mộc đậm đà, thơm nồng, hậu vị ngọt sâu (Đen đá / Nâu đá).',
+                image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'cf-bacxiu',
+                name: 'Bạc Xỉu Lio Kem Béo',
+                category: 'coffee',
+                categoryLabel: 'Cà Phê Nguyên Chất',
+                price: 35000,
+                badge: 'Best Seller',
+                badgeColor: 'bg-caramel-500 text-white',
+                desc: 'Sự hòa quyện hoàn hảo giữa sữa tươi kem béo ngậy và lớp cà phê Espresso mới chiết xuất thơm lừng.',
+                image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'cf-espresso',
+                name: 'Espresso Arabica Cầu Đất',
+                category: 'coffee',
+                categoryLabel: 'Cà Phê Nguyên Chất',
+                price: 35000,
+                badge: 'Rang Mộc',
+                badgeColor: 'bg-coffee-700 text-amber-200',
+                desc: 'Lớp Crema vàng óng mịn màng, hương thơm quyến rũ cùng vị chua thanh tao nhã chuẩn gu sành cà phê.',
+                image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'cf-coldbrew',
+                name: 'Cold Brew Cam Sả Thanh Mát',
+                category: 'coffee',
+                categoryLabel: 'Cà Phê Nguyên Chất',
+                price: 45000,
+                badge: 'Món Mới',
+                badgeColor: 'bg-tea-700 text-white',
+                desc: 'Cà phê ủ lạnh suốt 16 giờ êm mượt kết hợp nước cam vàng tươi và hương sả thơm dịu đầy sảng khoái.',
+                image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'cf-muoi',
+                name: 'Cà Phê Kem Muối Biển Lio',
+                category: 'coffee',
+                categoryLabel: 'Cà Phê Nguyên Chất',
+                price: 39000,
+                badge: 'Best Seller',
+                badgeColor: 'bg-caramel-500 text-white',
+                desc: 'Nền cà phê phin đậm đà quyện cùng lớp kem muối mặn dịu, béo mịn đánh thức vị giác ngay ngụm đầu tiên.',
+                image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'tea-daocamsa',
+                name: 'Trà Đào Cam Sả Hạt Chia',
+                category: 'tea',
+                categoryLabel: 'Trà Trái Cây & Thảo Mộc',
+                price: 42000,
+                badge: 'Best Seller',
+                badgeColor: 'bg-caramel-500 text-white',
+                desc: 'Cốt hồng trà ủ lạnh thanh mát, miếng đào giòn ngọt, cam vàng tươi và sả cây thơm dịu giải nhiệt.',
+                image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'tea-senvang',
+                name: 'Trà Sen Vàng Kem Cheese',
+                category: 'tea',
+                categoryLabel: 'Trà Trái Cây & Thảo Mộc',
+                price: 45000,
+                badge: 'Đặc Trưng',
+                badgeColor: 'bg-tea-700 text-white',
+                desc: 'Trà Ô Long thượng hạng ướp hương sen thanh tao, hạt sen bùi ngọt phủ lớp kem phô mai béo mịn.',
+                image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'tea-olongnhai',
+                name: 'Trà Ô Long Nhài Sữa Tươi',
+                category: 'tea',
+                categoryLabel: 'Trà Trái Cây & Thảo Mộc',
+                price: 39000,
+                badge: 'Thơm Dịu',
+                badgeColor: 'bg-tea-700 text-white',
+                desc: 'Đậm vị trà Ô Long ủ hoa nhài tự nhiên hòa quyện sữa tươi thanh nhẹ, không dùng bột béo công nghiệp.',
+                image: 'https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'tea-vaihoahong',
+                name: 'Trà Vải Hoa Hồng Thảo Mộc',
+                category: 'tea',
+                categoryLabel: 'Trà Trái Cây & Thảo Mộc',
+                price: 42000,
+                badge: 'Thanh Nhiệt',
+                badgeColor: 'bg-tea-700 text-white',
+                desc: 'Trái vải ngâm giòn ngọt kết hợp cốt trà hoa hồng thảo mộc dịu nhẹ, giàu vitamin và tốt cho làn da.',
+                image: 'https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'cake-croissant',
+                name: 'Bánh Croissant Bơ Pháp Ngàn Lớp',
+                category: 'bakery',
+                categoryLabel: 'Bánh Ngọt Thủ Công',
+                price: 38000,
+                badge: 'Nướng Mới Mỗi Sáng',
+                badgeColor: 'bg-amber-600 text-white',
+                desc: 'Vỏ bánh ngàn lớp vàng ruộm giòn tan, ruột mềm ẩm dậy mùi bơ Pháp thượng hạng khi dùng kèm cà phê.',
+                image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'cake-tiramisu',
+                name: 'Tiramisu Cà Phê Cacao Ý',
+                category: 'bakery',
+                categoryLabel: 'Bánh Ngọt Thủ Công',
+                price: 45000,
+                badge: 'Best Seller',
+                badgeColor: 'bg-caramel-500 text-white',
+                desc: 'Cốt bánh thấm đẫm Espresso nguyên chất nhà Lio, xen kẽ lớp kem phô mai Mascarpone mềm mượt ít ngọt.',
+                image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=80'
+            },
+            {
+                id: 'cake-cheesecake',
+                name: 'Passion Fruit Cheesecake (Chanh Dây)',
+                category: 'bakery',
+                categoryLabel: 'Bánh Ngọt Thủ Công',
+                price: 45000,
+                badge: 'Thủ Công Ít Ngọt',
+                badgeColor: 'bg-amber-600 text-white',
+                desc: 'Bánh phô mai nướng mịn màng phủ sốt chanh dây tươi chua dịu cân bằng vị giác tuyệt hảo.',
+                image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80'
+            }
+        ];
+
+        // 2. BIẾN TRẠNG THÁI GIỎ HÀNG & BỘ LỌC
+        let cart = [
+            // Mặc định gợi ý sẵn 1 món Best Seller để khách dễ hình dung khay đặt món
+            { id: 'cf-bacxiu', qty: 1 },
+            { id: 'cake-croissant', qty: 1 }
+        ];
+        let currentCategory = 'all';
+        let searchQuery = '';
+
+        // Định dạng tiền tệ VNĐ
+        function formatVND(amount) {
+            return amount.toLocaleString('vi-VN') + 'đ';
+        }
+
+        // 3. HIỂN THỊ DANH SÁCH THỰC ĐƠN
+        function renderMenu() {
+            const grid = document.getElementById('menuGrid');
+            const emptyNotice = document.getElementById('emptyMenuNotice');
+            
+            const filtered = menuData.filter(item => {
+                const matchCategory = currentCategory === 'all' || item.category === currentCategory;
+                const matchSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                    item.desc.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchCategory && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                emptyNotice.classList.remove('hidden');
+                return;
+            }
+
+            emptyNotice.classList.add('hidden');
+            grid.innerHTML = filtered.map(item => {
+                const inCart = cart.find(c => c.id === item.id);
+                const qtyBadge = inCart ? `<span class="ml-1 px-2 py-0.5 rounded-full bg-white text-caramel-600 text-xs font-extrabold">${inCart.qty}</span>` : '';
+
+                return `
+                    <article class="menu-card bg-white rounded-3xl overflow-hidden shadow-warm border border-coffee-100 flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-52 overflow-hidden bg-coffee-100">
+                                <img src="${item.image}" 
+                                     alt="${item.name} - LIO COFFEE" 
+                                     onerror="this.src='https://placehold.co/600x400/3E2723/FFFDF9?text=${encodeURIComponent(item.name)}'"
+                                     class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-bold shadow ${item.badgeColor}">
+                                    ${item.badge}
+                                </span>
+                                <span class="absolute bottom-3 right-3 px-3 py-1 rounded-xl bg-coffee-900/90 backdrop-blur-sm text-amber-300 font-serif font-bold text-base shadow">
+                                    ${formatVND(item.price)}
+                                </span>
+                            </div>
+                            <div class="p-5">
+                                <div class="text-[11px] font-bold uppercase tracking-wider text-caramel-600">${item.categoryLabel}</div>
+                                <h3 class="font-serif font-bold text-lg sm:text-xl text-coffee-900 mt-1 leading-snug">${item.name}</h3>
+                                <p class="text-xs sm:text-sm text-coffee-600 mt-2 line-clamp-3 leading-relaxed">${item.desc}</p>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5 pt-2 flex items-center justify-between gap-3 border-t border-coffee-50">
+                            <div>
+                                <span class="text-[11px] text-coffee-500 block">Giá tham khảo</span>
+                                <span class="font-bold text-base text-coffee-900">${formatVND(item.price)}</span>
+                            </div>
+                            <button type="button" onclick="addToCart('${item.id}')" 
+                                    class="px-4 py-2.5 rounded-xl bg-coffee-800 hover:bg-caramel-500 text-white font-bold text-xs sm:text-sm transition flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Chọn món</span>
+                                ${qtyBadge}
+                            </button>
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
+
+        // 4. QUẢN LÝ GIỎ HÀNG (THÊM, TĂNG/GIẢM, XÓA)
+        function addToCart(itemId) {
+            const item = menuData.find(m => m.id === itemId);
+            if (!item) return;
+
+            const existing = cart.find(c => c.id === itemId);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ id: itemId, qty: 1 });
+            }
+
+            renderMenu();
+            renderCart();
+            showToast('Đã thêm vào khay đặt món!', `Món "${item.name}" đã được thêm. Bạn có thể kéo xuống mục Đặt món để gửi Zalo 0932323012.`);
+        }
+
+        function updateCartQty(itemId, delta) {
+            const index = cart.findIndex(c => c.id === itemId);
+            if (index === -1) return;
+
+            cart[index].qty += delta;
+            if (cart[index].qty <= 0) {
+                cart.splice(index, 1);
+            }
+            renderMenu();
+            renderCart();
+        }
+
+        function renderCart() {
+            const container = document.getElementById('cartItemsContainer');
+            const totalQtyEl = document.getElementById('cartTotalQty');
+            const totalPriceEl = document.getElementById('cartTotalPrice');
+            const clearBtn = document.getElementById('clearCartBtn');
+
+            const headerBadge = document.getElementById('headerCartCount');
+            const mobileBadge = document.getElementById('mobileCartCount');
+            const floatingBadge = document.getElementById('floatingCartCount');
+
+            let totalQty = 0;
+            let totalPrice = 0;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="py-8 text-center text-coffee-500">
+                        <i class="fa-solid fa-mug-hot text-3xl text-coffee-300 mb-2"></i>
+                        <p class="text-sm font-medium text-coffee-700">Khay món của bạn đang trống.</p>
+                        <p class="text-xs text-coffee-500 mt-1">Hãy bấm "Chọn món +" ở thực đơn phía trên hoặc đặt bàn trực tiếp bên cạnh nhé!</p>
+                    </div>
+                `;
+                clearBtn.classList.add('hidden');
+            } else {
+                clearBtn.classList.remove('hidden');
+                container.innerHTML = cart.map(cartItem => {
+                    const info = menuData.find(m => m.id === cartItem.id);
+                    if (!info) return '';
+                    const itemTotal = info.price * cartItem.qty;
+                    totalQty += cartItem.qty;
+                    totalPrice += itemTotal;
+
+                    return `
+                        <div class="py-3.5 flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-3 min-w-0">
+                                <img src="${info.image}" alt="${info.name}" 
+                                     onerror="this.src='https://placehold.co/100x100/3E2723/FFFDF9?text=LIO'"
+                                     class="w-12 h-12 rounded-xl object-cover shrink-0 border border-coffee-100">
+                                <div class="min-w-0">
+                                    <h4 class="font-bold text-sm text-coffee-900 truncate">${info.name}</h4>
+                                    <div class="text-xs text-caramel-600 font-semibold">${formatVND(info.price)} / phần</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 shrink-0">
+                                <button type="button" onclick="updateCartQty('${info.id}', -1)" class="w-7 h-7 rounded-lg bg-coffee-100 hover:bg-coffee-200 text-coffee-900 font-bold text-xs flex items-center justify-center" aria-label="Giảm số lượng">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span class="w-6 text-center font-bold text-sm text-coffee-900">${cartItem.qty}</span>
+                                <button type="button" onclick="updateCartQty('${info.id}', 1)" class="w-7 h-7 rounded-lg bg-caramel-500 hover:bg-caramel-600 text-white font-bold text-xs flex items-center justify-center" aria-label="Tăng số lượng">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <span class="w-20 text-right font-bold text-sm text-coffee-900">${formatVND(itemTotal)}</span>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            totalQtyEl.textContent = `${totalQty} món`;
+            totalPriceEl.textContent = formatVND(totalPrice);
+            headerBadge.textContent = totalQty;
+            mobileBadge.textContent = totalQty;
+            floatingBadge.textContent = totalQty;
+
+            updateOrderPreview();
+        }
+
+        // 5. TẠO NỘI DUNG ĐƠN HÀNG ĐỂ SAO CHÉP & GỬI ZALO 0932323012
+        function generateOrderText() {
+            const name = document.getElementById('custName').value.trim() || '[Chưa nhập tên]';
+            const phone = document.getElementById('custPhone').value.trim() || '[Chưa nhập SĐT]';
+            const type = document.getElementById('orderType').value;
+            const address = document.getElementById('custAddress').value.trim() || 'Trao đổi thêm qua Zalo/Điện thoại';
+            const note = document.getElementById('custNote').value.trim() || 'Không có ghi chú thêm';
+
+            let itemsLines = '';
+            let total = 0;
+
+            if (cart.length === 0) {
+                itemsLines = '- Khách cần tư vấn chọn món / Đặt bàn trước';
+            } else {
+                itemsLines = cart.map((c, idx) => {
+                    const info = menuData.find(m => m.id === c.id);
+                    const sub = info.price * c.qty;
+                    total += sub;
+                    return `${idx + 1}. ${info.name} x${c.qty} = ${formatVND(sub)}`;
+                }).join('\n');
+            }
+
+            return `☕ ĐƠN ĐẶT MÓN / ĐẶT BÀN - LIO COFFEE\n` +
+                   `Chủ quán nhận đơn: Vũ Văn Lánh (0932323012)\n` +
+                   `----------------------------\n` +
+                   `👤 Khách hàng: ${name}\n` +
+                   `📞 SĐT khách: ${phone}\n` +
+                   `📌 Hình thức: ${type}\n` +
+                   `📍 Địa chỉ / Giờ hẹn: ${address}\n` +
+                   `----------------------------\n` +
+                   `📋 DANH SÁCH MÓN:\n${itemsLines}\n` +
+                   `💰 Tổng tạm tính: ${formatVND(total)}\n` +
+                   `📝 Ghi chú: ${note}`;
+        }
+
+        function updateOrderPreview() {
+            const previewEl = document.getElementById('orderPreviewText');
+            if (previewEl) {
+                previewEl.textContent = generateOrderText();
+            }
+        }
+
+        // Sao chép vào bộ nhớ tạm an toàn (tương thích mọi trình duyệt & iframe)
+        function copyTextToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+            } catch (err) {
+                // Bỏ qua nếu trình duyệt chặn
+            }
+            document.body.removeChild(textarea);
+        }
+
+        // 6. LIGHTBOX XEM ẢNH KHÔNG GIAN QUÁN
+        function openLightbox(imgUrl, title, desc) {
+            const modal = document.getElementById('lightboxModal');
+            document.getElementById('lightboxImg').src = imgUrl;
+            document.getElementById('lightboxTitle').textContent = title;
+            document.getElementById('lightboxDesc').textContent = desc;
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+        }
+
+        // 7. HIỂN THỊ THÔNG BÁO TOAST (KHÔNG DÙNG ALERT)
+        let toastTimeout = null;
+        function showToast(title, message) {
+            const toast = document.getElementById('toastModal');
+            document.getElementById('toastTitle').textContent = title;
+            document.getElementById('toastMessage').textContent = message;
+            toast.classList.remove('hidden');
+
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                hideToast();
+            }, 4200);
+        }
+
+        function hideToast() {
+            document.getElementById('toastModal').classList.add('hidden');
+        }
+
+        // 8. KHỞI TẠO SỰ KIỆN KHI TRANG TẢI XONG
+        document.addEventListener('DOMContentLoaded', () => {
+            renderMenu();
+            renderCart();
+
+            // Lọc danh mục thực đơn
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentCategory = btn.getAttribute('data-category');
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-coffee-800', 'text-white', 'shadow', 'font-bold');
+                        b.classList.add('bg-white', 'text-coffee-800', 'font-semibold');
+                    });
+                    btn.classList.remove('bg-white', 'text-coffee-800', 'font-semibold');
+                    btn.classList.add('bg-coffee-800', 'text-white', 'shadow', 'font-bold');
+                    renderMenu();
+                });
+            });
+
+            // Tìm kiếm thực đơn
+            const searchInput = document.getElementById('menuSearchInput');
+            const clearSearchBtn = document.getElementById('clearSearchBtn');
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                clearSearchBtn.classList.toggle('hidden', searchQuery.length === 0);
+                renderMenu();
+            });
+
+            clearSearchBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                searchQuery = '';
+                clearSearchBtn.classList.add('hidden');
+                renderMenu();
+            });
+
+            document.getElementById('resetFilterBtn').addEventListener('click', () => {
+                currentCategory = 'all';
+                searchQuery = '';
+                searchInput.value = '';
+                clearSearchBtn.classList.add('hidden');
+                filterBtns[0].click();
+            });
+
+            // Xóa hết giỏ hàng
+            document.getElementById('clearCartBtn').addEventListener('click', () => {
+                cart = [];
+                renderMenu();
+                renderCart();
+                showToast('Đã làm mới khay món', 'Bạn có thể chọn lại các món yêu thích từ thực đơn LIO COFFEE.');
+            });
+
+            // Lắng nghe thay đổi form đặt hàng để cập nhật bản xem trước
+            ['custName', 'custPhone', 'orderType', 'custAddress', 'custNote'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('input', updateOrderPreview);
+                    el.addEventListener('change', updateOrderPreview);
+                }
+            });
+
+            // Nút Sao chép đơn & Nhắn Zalo 0932323012
+            document.getElementById('sendZaloOrderBtn').addEventListener('click', () => {
+                const nameInput = document.getElementById('custName');
+                const phoneInput = document.getElementById('custPhone');
+
+                if (!nameInput.value.trim() || !phoneInput.value.trim()) {
+                    showToast('Vui lòng điền Tên & Số điện thoại', 'Hãy nhập Tên và Số điện thoại của bạn để Chủ quán Vũ Văn Lánh tiện liên hệ xác nhận đơn nhé!');
+                    nameInput.focus();
+                    return;
+                }
+
+                const orderText = generateOrderText();
+                copyTextToClipboard(orderText);
+                showToast('Đã sao chép nội dung đơn hàng!', 'Đang mở Zalo 0932323012 của Chủ quán Vũ Văn Lánh. Bạn chỉ cần Dán (Paste) tin nhắn để gửi đơn.');
+
+                setTimeout(() => {
+                    window.open('https://zalo.me/0932323012', '_blank', 'noopener,noreferrer');
+                }, 900);
+            });
+
+            // Đóng mở Menu Mobile
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuIcon = document.getElementById('mobileMenuIcon');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuIcon.className = isHidden ? 'fa-solid fa-bars text-xl' : 'fa-solid fa-xmark text-xl';
+            });
+
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuIcon.className = 'fa-solid fa-bars text-xl';
+                });
+            });
+
+            // Đóng mở FAQ Accordion
+            document.querySelectorAll('.faq-toggle').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const content = btn.nextElementSibling;
+                    const icon = btn.querySelector('i');
+                    content.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+
+            // Đóng Lightbox khi bấm nền tối hoặc phím ESC
+            document.getElementById('lightboxModal').addEventListener('click', (e) => {
+                if (e.target.id === 'lightboxModal') closeLightbox();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeLightbox();
+            });
+        });
+    </script>
+</body>
+</html>
